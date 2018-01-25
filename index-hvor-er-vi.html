@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fælles Folkelig Forberedelse</title>
+    <link rel="stylesheet" href="css/style-hvor-er-vi.css">
+    <script src="script/script.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/Logo.ico">
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html">Home</a></div> 
+        <ul id="headerOptionsContainer">
+            <li id="home"><a href="index.html">Hjem</a></li>
+            <li id="options"><a href="index-muligheder.html">Muligheder</a></li>
+            <li id="whereAreWe"><a href="index-hvor-er-vi.html">Hvor er vi?</a></li>
+            <li id="about"><a href="index-om-os.html">Om os</a></li>
+            <li id="contact"><a href="index-kontakt.html">Kontakt</a></li>
+            <div id="socials">
+                <div id="facebook">
+                    <svg height="30" width="30">
+                        <a href="https://facebook.com/" target="blank">
+                            <text x="15" y="20" font-size="15">&#xf09a;</text>
+                            <circle cx="15" cy="15" r="13"></circle>
+                        </a>
+                    </svg>
+                </div>
+
+                <div id="twitter">
+                    <svg height="30" width="30">
+                        <a href="https://twitter.com/" target="blank">
+                            <text x="15" y="21" font-size="15">&#xf099;</text>
+                            <circle cx="15" cy="15" r="13"></circle>
+                        </a>
+                    </svg>
+                </div>
+
+                <div id="instagram">
+                    <svg height="30" width="30">
+                        <a href="https://www.instagram.com/" target="blank">
+                            <text x="15" y="20" font-size="15">&#xf16d;</text>
+                            <circle cx="15" cy="15" r="13"></circle>
+                        </a>
+                    </svg>
+                </div>
+            </div>
+        </ul>
+
+        <div id="navigationBar"></div>
+        <div id="navigationBarText">
+            <a href="index.html">Hjem</a> <i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="index-hvor-er-vi.html">Hvor er vi?</a>
+        </div>
+        
+
+    </header>
+        <main>
+            <div id="whereAreWeText">Hvor er vi</div>
+            <div id="map_container">
+                <div id="map"></div>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfI354PLC_fAPwOl-SJfvh2x5VDjPt1rA&callback=hvorErVi">
+                </script>
+            </div>
+        </main>
+    <footer>
+        <div id="locationBox">
+            <div id="locationBoxText">
+                <div>Esbjerg</div>
+                <div>Spangsbjerg Kirkevej 103</div>
+                <div>6700 Esbjerg</div>
+                <div>+45 7613 3200</div>
+                <div>Telefontider:</div>
+                <div>Man-søn: Alle 24 timer i døgnet</div>
+            </div>
+        </div>
+        <div id="aboutBox">
+             <div id="aboutBoxText">
+                 <a href="index-om-os.html">Om os</a>
+             </div>
+        </div>
+        <div id="socialsBox">
+            <div id="socialsBoxIcons">
+                <div id="facebookFooter">
+                    <svg height="30" width="30">
+                        <a href="https://facebook.com/" target="blank">
+                            <text x="15" y="20" font-size="15">&#xf09a;</text>
+                            <circle cx="15" cy="15" r="13"></circle>
+                        </a>
+                    </svg>
+                </div>
+
+                <div id="twitterFooter">
+                    <svg height="30" width="30">
+                        <a href="https://twitter.com/" target="blank">
+                            <text x="15" y="21" font-size="15">&#xf099;</text>
+                            <circle cx="15" cy="15" r="13"></circle>
+                        </a>
+                    </svg>
+                </div>
+
+                <div id="instagramFooter">
+                    <svg height="30" width="30">
+                        <a href="https://www.instagram.com/" target="blank">
+                            <text x="15" y="20" font-size="15">&#xf16d;</text>
+                            <circle cx="15" cy="15" r="13"></circle>
+                        </a>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="logoBox">
+            <div id="logoBoxLogo"><a href="index.html">Home</a></div>
+        </div>
+    </footer>
+</body>
+</html>
