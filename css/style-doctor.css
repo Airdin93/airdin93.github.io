@@ -38,6 +38,19 @@ body{
         grid-row: 1/2;
     }
 
+    nav .icon {
+        display: none;
+    }
+
+    #headerTextContainer{
+        display: none;
+    }
+
+    #topNav{
+        grid-column: 2/11;
+        grid-row: 1/2;
+    }
+
     #headerOptionsContainer{
         padding: 0;
         display: grid;
@@ -73,6 +86,16 @@ body{
         display: flex;
         justify-content: center;
         grid-column: 1/2;
+    }
+
+    #home a, #options a, #whereAreWe a, #about a, #contact a, #socials a{
+        color: #ffffff;
+        text-decoration: none;
+        white-space:nowrap;
+    }
+
+    #home a:hover, #options a:hover, #whereAreWe a:hover, #about a:hover, #contact a:hover, #socials a:hover{
+        color: #dbdbdb;
     }
 
     #home a {
@@ -241,7 +264,6 @@ body{
         width: 100%;
     }
 
-    /*INFORMATION*/
     #information {
         grid-column: 1/4; 
         grid-row: 2/3; 
@@ -310,7 +332,6 @@ body{
         grid-row: 2/3; 
         margin: 2px 0; 
     }
-    /*INFORMATION*/
 
 /* Footer Section */
 
@@ -333,18 +354,21 @@ body{
 
     #locationBoxText{
         color: #ffffff;
-        margin: 10% 0 0 8%;
+        padding: 35px 10px 0 calc(8% + 10px);;
     }
 
     #aboutBox{
         background-color:#a9b3c6;
         margin: 1.5% 0.75% 1.5% 0.75%;
         grid-column: 2/3;
+        display: flex;
+        justify-content: center;
     }
 
     #aboutBoxText{
         color: #ffffff;
-        margin:25% 0 0 40%;
+        margin:100px 0 0 0;
+        padding: 0 10px 0 10px;
     }
 
     #aboutBoxText a{
@@ -367,15 +391,16 @@ body{
         list-style: none;
         display: flex;
         justify-content: center;
+        padding: 0 10px 0 10px;
     }
 
     #twitterFooter, #facebookFooter{
-        margin: 24% 10% 0 0;
+        margin: 100px 10% 0 0;
         position: relative;
     }
 
     #instagramFooter{
-        margin: 24% 0 0 0;
+        margin: 100px 0 0 0;
         position: relative;
     }
 
@@ -402,18 +427,164 @@ body{
     }
 
     #logoBoxLogo{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-image: url("../images/Logo.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 108px;
-    width: 108px;
-
-    overflow:hidden;
-    text-indent:200%;
-    white-space:nowrap;
-    float: right;
-    margin: 27% 0 0 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-image: url("../images/Logo.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 108px;
+        width: 108px;
+        
+        overflow:hidden;
+        text-indent:200%;
+        white-space:nowrap;
+        float: right;
+        margin: 100px 0 0 0;
     }
+
+@media screen and (max-width: 720px) {
+    
+    body{
+        grid-template-rows: 104px 0 min-content min-content ;
+    }
+
+    /* Header Section */
+
+        header{
+            border-style: solid;
+            border-width: 1px;
+            border-color: #919091;
+            
+            display: block;
+            
+            
+            grid-column: 1/13;
+            grid-row: 1/2;
+            z-index: 200;
+        }
+
+        nav a.icon, nav.responsive a.icon {
+            display: block;
+            text-decoration: none; 
+            color: #ededed; 
+            position: absolute; 
+            top: 30px; 
+            right: 30px;
+        }
+
+        .icon{
+            font-size: 30px;
+            z-index: 1;
+        }
+
+        nav.headerNav #headerOptionsContainer{
+            display: none;
+        }
+
+        nav.responsive #headerOptionsContainer{
+            display: block;
+        }
+
+        nav.responsive #headerOptionsContainer #socials{
+            display: none;
+        }
+
+        #navigationBar{
+            display: none;
+        }
+
+        #navigationBarText{
+            display: none;
+        }
+
+        #headerOptionsContainer{
+            margin: 0 0 0 0;
+            padding: 15px 0 0 0;
+            background-color:#a7b1c4;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #5a4e4d;
+            height: 140px;
+            z-index: 100;
+        }
+
+        #logo{
+            position: absolute;
+        }
+
+        nav.responsive #headerTextContainer{
+            display: none;
+        }
+
+        #headerTextContainer{
+            height: 100px;
+            width: calc(100% - 5px);
+            position: absolute;
+            display: grid;
+            grid-template-rows: 100px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #5a4e4d;
+
+            position: relative;
+            overflow: hidden;
+            position: absolute;
+        }
+    
+        #headerText{
+            display: flex;
+            justify-content: center;
+            padding: 30px 0 0 0;
+            white-space:nowrap;
+            font-family: HelveticaRoundedLTStd-Bd;
+            font-size: 24px;
+            color: #ffffff;
+
+        }
+
+    /* Main Section */
+        
+        main {
+            grid-template-rows: 400px auto;
+        }
+
+        #information {
+            grid-template-columns: repeat(2, 25%);
+        }
+
+        #information #text {
+            padding: 40px 10px 40px 40px; 
+        }
+
+        #information #person {
+            grid-template-columns: 200px; 
+            grid-template-rows: min-content 50px; 
+        }
+
+        #person #box1 {
+            grid-template-rows: 90% 20px; 
+        }
+
+        #box1 #image {
+            background-size: 200px;
+        }
+    
+        #person #box2 {
+            overflow: hidden;
+        }
+
+        #box2{
+            word-break: break-all;
+        }
+    
+        #lægeforeningen {
+            background-size: 200px; 
+        }
+
+    /* Footer Section */
+
+        footer{
+            overflow: hidden;
+        }
+}
