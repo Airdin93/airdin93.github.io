@@ -1,187 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fælles Folkelig Forberedelse</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script/script.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/Logo.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110858468-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <script data-ionic="inject">
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.2.9';i.staticDir='build/';})(window);
+  </script>
+  <meta charset="UTF-8">
+  <title>Ionic App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
 
-        gtag('config', 'UA-110858468-1');
-    </script>
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- cordova.js required for cordova apps (remove if not needed) -->
+  <script src="cordova.js"></script>
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="build/main.css" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div id="logo"><a href="index.html">Home</a></div>
-        <nav class="headerNav" id="topNav">
-            <ul id="headerOptionsContainer">
-                <li id="home"><a href="index.html">Hjem</a></li>
-                <li id="options"><a href="index-muligheder.html">Muligheder</a></li>
-                <li id="whereAreWe"><a href="index-hvor-er-vi.html">Hvor er vi?</a></li>
-                <li id="about"><a href="index-om-os.html">Om os</a></li>
-                <li id="contact"><a href="index-kontakt.html">Kontakt</a></li>
-                <div id="socials">
-                    <div id="facebook">
-                        <svg height="30" width="30">
-                            <a href="https://facebook.com/" target="blank">
-                                <text x="15" y="20" font-size="15">&#xf09a;</text>
-                                <circle cx="15" cy="15" r="13"></circle>
-                            </a>
-                        </svg>
-                    </div>
 
-                    <div id="twitter">
-                        <svg height="30" width="30">
-                            <a href="https://twitter.com/" target="blank">
-                                <text x="15" y="21" font-size="15">&#xf099;</text>
-                                <circle cx="15" cy="15" r="13"></circle>
-                            </a>
-                        </svg>
-                    </div>
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
 
-                    <div id="instagram">
-                        <svg height="30" width="30">
-                            <a href="https://www.instagram.com/" target="blank">
-                                <text x="15" y="20" font-size="15">&#xf16d;</text>
-                                <circle cx="15" cy="15" r="13"></circle>
-                            </a>
-                        </svg>
-                    </div>
-                </div>
-            </ul>
-            <a href="javascript:void(0);" class="icon" onclick="rwdMenuFunction()">&#9776;</a>
-        </nav>
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
 
-        <div id="navigationBar"></div>
-        <div id="navigationBarText">
-            <a href="index.html">Hjem</a>
-        </div>
-        
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
 
-    </header>
-    <main>
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
 
-        <div id="banner">
-            <div id="bannerTextTopOverlay">
-                    <div id="bannerTextTopText">Fælles Folkelig Forberedelse</div>
-            </div>
-
-            <div id="wrapper" style="width:100%; text-align:center">
-                <img src="images/ChangingImg1.jpg" alt="" id="changingImage">
-            </div>
-
-
-            <!-- <img src="images/ChangingImg1.jpg" alt="" id="changingImage"> -->
-            
-            
-            
-            
-            <div id="bannerTextBottomOverlay">
-                <div id="bannerTextBottomText">Fremtiden er din</div>
-            </div>
-
-            
-            
-            <!-- <div id="bannerTextTopOverlay">
-                <div id="bannerTextTopText">Fælles Folkelig Forberedelse</div>
-            </div>
-            <div id="bannerTextBottomOverlay">
-                <div id="bannerTextBottomText">Fremtiden er din</div>
-            </div> -->
-        </div>
-        <div id="buttons">
-            <div id="medicPlace"><a href="index-doctor.html">Medic</a></div>
-            <div id="kidsPlace"><a href="index-klubhuset.html">Kids</a></div>
-            <div id="relaxationPlace"><a href="index-frirumshuset.html">Relaxation</a></div>
-            <div id="foodPlace"><a href="index-indkøb.html">Food</a></div>
-        </div>
-        <div id="buttonsText">
-            <div id="medicPlaceText">
-                <div>• Få lægehjælp</div>
-                <div>• Apotek</div>
-                <div>• Råd og vejledning</div>
-            </div>
-            <div id="kidsPlaceText">
-                <div>• Aktiviteter for børn</div>
-                <div>• Samlested</div>
-                <div>• Børnepasning</div>
-            </div>
-            <div id="relaxationPlaceText">
-                <div>• Stilleområde</div>
-                <div>• Lounge</div>
-                <div>• Cafe</div>
-            </div>
-            <div id="foodPlacePlaceText">
-                <div>• Indkøbsmuligheder</div>
-                <div>• Posthus</div>
-                <div>• Information</div>
-            </div>
-        </div>
-        <div id="map_container">
-            <div id="map"></div>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfI354PLC_fAPwOl-SJfvh2x5VDjPt1rA&callback=indexMap">
-            </script>
-        </div>
-    </main>
-    <footer>
-        <div id="locationBox">
-            <div id="locationBoxText">
-                <div>Esbjerg</div>
-                <div>Spangsbjerg Kirkevej 103</div>
-                <div>6700 Esbjerg</div>
-                <div>+45 7613 3200</div>
-                <div>Telefontider:</div>
-                <div>Man-søn: Alle 24 timer i døgnet</div>
-            </div>
-        </div>
-        <div id="aboutBox">
-             <div id="aboutBoxText">
-                 <a href="index-om-os.html">Om os</a>
-             </div>
-        </div>
-        <div id="socialsBox">
-            <div id="socialsBoxIcons">
-                <div id="facebookFooter">
-                    <svg height="30" width="30">
-                        <a href="https://facebook.com/" target="blank">
-                            <text x="15" y="20" font-size="15">&#xf09a;</text>
-                            <circle cx="15" cy="15" r="13"></circle>
-                        </a>
-                    </svg>
-                </div>
-
-                <div id="twitterFooter">
-                    <svg height="30" width="30">
-                        <a href="https://twitter.com/" target="blank">
-                            <text x="15" y="21" font-size="15">&#xf099;</text>
-                            <circle cx="15" cy="15" r="13"></circle>
-                        </a>
-                    </svg>
-                </div>
-
-                <div id="instagramFooter">
-                    <svg height="30" width="30">
-                        <a href="https://www.instagram.com/" target="blank">
-                            <text x="15" y="20" font-size="15">&#xf16d;</text>
-                            <circle cx="15" cy="15" r="13"></circle>
-                        </a>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div id="logoBox">
-            <div id="logoBoxLogo"><a href="index.html">Home</a></div>
-        </div>
-    </footer>
 </body>
 </html>
