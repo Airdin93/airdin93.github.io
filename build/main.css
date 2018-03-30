@@ -25696,6 +25696,28 @@ page-home {
   */
 }
 
+#topFiller {
+  height: 56px;
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("../../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+ion-navbar, .content h1, .content h5 {
+  font-family: OpenSans-Bold;
+}
+
+.content, #contactInfomationText h1 {
+  font-family: OpenSans-Regular;
+}
+
 #navAboutMe, #navContact, #navDownloadCV, #navSocials {
   text-align: center;
 }
@@ -25714,7 +25736,7 @@ body {
   max-width: 800px;
   margin: auto;
   background-color: #ffffff;
-  padding: 60px 10px 10px 10px;
+  padding: 0px 10px 10px 10px;
   -webkit-box-shadow: 0 0 30px #333;
   box-shadow: 0 0 30px #333;
 }
@@ -25846,4 +25868,22 @@ ion-grid ion-row ion-col img, #content div ion-grid ion-row .col {
     margin: 0;
   }
   */
+}
+
+@media screen and (max-width: 427px) {
+  #topFiller {
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 244px) {
+  #topFiller {
+    height: 84px;
+  }
+}
+
+@media screen and (max-width: 225px) {
+  #topFiller {
+    height: 95px;
+  }
 }
