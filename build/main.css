@@ -25685,21 +25685,6 @@ body {
   user-select: text;
 }
 
-page-home {
-  /*
-  ion-grid{
-    background-color: #bd959d;
-  }
-  ion-col{
-    background-color: #ededed;
-  }
-  */
-}
-
-#topFiller {
-  height: 56px;
-}
-
 @font-face {
   font-family: OpenSans-Regular;
   src: url("../../assets/fonts/OpenSans-Regular.ttf") format("truetype");
@@ -25710,6 +25695,10 @@ page-home {
   src: url("../../assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
+#topFiller {
+  height: 56px;
+}
+
 ion-navbar, .content h1, .content h5 {
   font-family: OpenSans-Bold;
 }
@@ -25718,12 +25707,12 @@ ion-navbar, .content h1, .content h5 {
   font-family: OpenSans-Regular;
 }
 
-#navAboutMe, #navContact, #navDownloadCV, #navSocials {
-  text-align: center;
-}
-
 a {
   text-decoration: none !important;
+}
+
+#navAboutMe, #navContact, #navDownloadCV, #navSocials {
+  text-align: center;
 }
 
 body {
@@ -25735,7 +25724,7 @@ body {
   background-image: url("../assets/imgs/bgwhite.png");
   max-width: 800px;
   margin: auto;
-  background-color: #ffffff;
+  background-color: #fbfbfb;
   padding: 0px 10px 10px 10px;
   -webkit-box-shadow: 0 0 30px #333;
   box-shadow: 0 0 30px #333;
@@ -25743,16 +25732,17 @@ body {
 
 .item {
   background-image: url("../assets/imgs/bgwhite.png");
+  background-color: #fbfbfb;
 }
 
 .scroll-content {
   background-image: url("../assets/imgs/bg.png");
-  background-color: #6495ed;
+  background-color: #2956a6;
 }
 
 .toolbar-background {
   background-image: url("../assets/imgs/bgNav.png");
-  background-color: #4984ed;
+  background-color: #3e537a;
 }
 
 ion-header a {
@@ -25776,24 +25766,13 @@ hr {
   margin: 20px 0 0 0;
 }
 
-/*
-#aboutMe{
-  background-image: url("../assets/imgs/bgNav.png");
-  margin: 0 -10px 0 -10px;
-  padding: 0 0 0 10px;
-}
-
-#aboutMe h1{
-  color: #ffffff;
-}
-*/
 ion-slides {
   height: 50vh;
 }
 
 ion-slide {
   background-image: url("../assets/imgs/bgshowcase.png");
-  background-color: lightblue;
+  background-color: #9aaed3;
   color: #ffffff;
 }
 
@@ -25801,12 +25780,6 @@ ion-slide img {
   max-height: 35vh !important;
 }
 
-/*
-#content div ion-grid ion-row .col{
-  max-height: 225px;
-  max-width: 225px;
-}
-*/
 ion-grid ion-row ion-col img, #content div ion-grid ion-row .col {
   max-height: 250px;
   max-width: 250px;
@@ -25819,19 +25792,6 @@ ion-grid ion-row ion-col img, #content div ion-grid ion-row .col {
   box-shadow: 0 0 1px #000000;
 }
 
-/*
-#showcase2Box{
-  width: 200px;
-  height: 200px;
-  background-color: green;
-}
-
-#showcase3Box{
-  width: 200px;
-  height: 200px;
-  background-color: green;
-}
-*/
 #showcase1 {
   margin: 0 0 0 35%;
 }
@@ -25863,11 +25823,6 @@ ion-grid ion-row ion-col img, #content div ion-grid ion-row .col {
   ion-slide img {
     max-height: 25vh !important;
   }
-  /*
-  #showcase2{
-    margin: 0;
-  }
-  */
 }
 
 @media screen and (max-width: 427px) {
