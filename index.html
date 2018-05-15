@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nice Place Holder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
 </head>
 <body>
-    <h1>Temp Place Holder</h1>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116656869-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- <img src="images/Question1Answer1.jpg" alt="" id="imgClickToChange"> -->
 
-    gtag('config', 'UA-116656869-1');
-  </script>
+    <p id="test1" onclick="question1()">Spørgsmål 1</p>
+    <p id="test2" onclick="question2()">Spørgsmål 2</p>
+    <p id="test3" onclick="question3()">Spørgsmål 3</p>
+    <p id="test4" onclick="question4()">Spørgsmål 4</p>
+
+    <img src="images/Answer.png" onclick="question1()" id="image1" style=" width: 300px; height: 300px">
+    <img src="images/Answer.png" onclick="question2()" id="image2" style=" width: 300px; height: 300px">
+    <img src="images/Answer.png" onclick="question3()" id="image3" style=" width: 300px; height: 300px">
+    <img src="images/Answer.png" onclick="question4()" id="image4" style=" width: 300px; height: 300px">
+
+    <button onclick="test()">Mango</button>
 </body>
 </html>
