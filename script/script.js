@@ -12,7 +12,7 @@ let clickedImage;
 
 let answered = false;
 
-sessionStorage.SessionName
+//sessionStorage.SessionName
 
 //sessionStorage.SessionName = rightAnswersCounter;
 
@@ -35,7 +35,7 @@ function hideElements(){
     document.getElementById("test1").style.display = "none";
 }
 
-function localStorage() {
+function sessionStorage() {
     sessionStorage.setItem("SessionName",rightAnswersCounter);
 }
 
@@ -260,6 +260,7 @@ function changeWrongImages() {
 
 function changeFunction() {
     if(question === numbersOfQuestions){
+        sessionStorage();
         document.location.href = 'winScreen.html'
     }
 
