@@ -1,21 +1,93 @@
+window.onload = windowCheck;
+
 let rightAnswersCounter = 0;
 
 let question = 1;
 
-var timeoutActive = false;
+let numbersOfQuestions = 5; //Manuel set this value
 
-var clickedImage;
+let timeoutActive = false;
 
-var answered = false;
+let clickedImage;
+
+let answered = false;
+
+sessionStorage.SessionName
+
+//sessionStorage.SessionName = rightAnswersCounter;
+
+//sessionStorage.getItem("SessionName");
+
+//sessionStorage.setItem("SessionName",rightAnswersCounter);
 
 let answer1 =[
-    {answer: true}, {answer: false},
-    {answer: false}, {answer: false}
+    {answer: true, question: "question1"},
+    {answer: false, question: "question2"},
+    {answer: false, question: "question3"},
+    {answer: false, question: "question4"}
 ];
+
+function hideElements(){
+    document.getElementById("image1").style.display = "none";
+    document.getElementById("image2").style.display = "none";
+    document.getElementById("image3").style.display = "none";
+    document.getElementById("image4").style.display = "none";
+    document.getElementById("test1").style.display = "none";
+}
+
+function localStorage() {
+    sessionStorage.setItem("SessionName",rightAnswersCounter);
+}
 
 //DELETE THIS
 function test() {
     console.log(rightAnswersCounter);
+    //hideElements();
+
+}
+
+function windowCheck() {
+    if (window.location.href.match('quiz.html')){
+        setQuestions();
+    }
+    else if (window.location.href.match('winScreen.html')){
+        winMessage();
+    }
+}
+
+function winMessage() {
+    //document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
+    document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
+}
+
+function setQuestions() {
+    document.getElementById("test1").innerHTML = answer1[0].question;
+    document.getElementById("test2").innerHTML = answer1[1].question;
+    document.getElementById("test3").innerHTML = answer1[2].question;
+    document.getElementById("test4").innerHTML = answer1[3].question;
+
+    /*
+    let image1 = document.getElementById('image1');
+    let image2 = document.getElementById('image2');
+    let image3 = document.getElementById('image3');
+    let image4 = document.getElementById('image4');
+
+    image1.src='images/Answer.png';
+    image2.src='images/Answer.png';
+    image3.src='images/Answer.png';
+    image4.src='images/Answer.png';
+
+
+    document.getElementById("image1").style.width = "300px";
+    document.getElementById("image1").style.height = "300px";
+    document.getElementById("image2").style.width = "300px";
+    document.getElementById("image2").style.height = "300px";
+    document.getElementById("image3").style.width = "300px";
+    document.getElementById("image3").style.height = "300px";
+    document.getElementById("image4").style.width = "300px";
+    document.getElementById("image4").style.height = "300px";
+    */
+
 }
 
 function question1() {
@@ -27,7 +99,6 @@ function question1() {
             changeRightImages();
         }
         changeWrongImages();
-        timeoutFunction();
         answered = true;
     }
 }
@@ -41,7 +112,6 @@ function question2() {
             changeRightImages();
         }
         changeWrongImages();
-        timeoutFunction();
         answered = true;
     }
 }
@@ -55,7 +125,6 @@ function question3() {
             changeRightImages();
         }
         changeWrongImages();
-        timeoutFunction();
         answered = true;
     }
 }
@@ -69,7 +138,6 @@ function question4() {
             changeRightImages();
         }
         changeWrongImages();
-        timeoutFunction();
         answered = true;
     }
 }
@@ -100,47 +168,57 @@ function checkQuestion(){
 
 function answerIs2() {
     answer1 =[
-        {answer: false}, {answer: true},
-        {answer: false}, {answer: false}];
+        {answer: false, question: "question5"},
+        {answer: true, question: "question6"},
+        {answer: false, question: "question7"},
+        {answer: false, question: "question8"}];
 }
 
 function answerIs3() {
     answer1 =[
-        {answer: false}, {answer: false},
-        {answer: true}, {answer: false}];
+        {answer: false, question: "question9"},
+        {answer: false, question: "question10"},
+        {answer: true, question: "question11"},
+        {answer: false, question: "question12"}];
 }
 
 function answerIs4() {
     answer1 =[
-        {answer: false}, {answer: false},
-        {answer: false}, {answer: true}];
+        {answer: false, question: "question13"},
+        {answer: false, question: "question14"},
+        {answer: false, question: "question15"},
+        {answer: true, question: "question16"}];
 }
 
 function answerIs5() {
     answer1 =[
-        {answer: false}, {answer: true},
-        {answer: false}, {answer: false}];
+        {answer: false, question: "question17"},
+        {answer: true, question: "question18"},
+        {answer: false, question: "question19"},
+        {answer: false, question: "question20"}];
 }
 
 function changeImages() {
-    var image1 = document.getElementById('image1');
-    var image2 = document.getElementById('image2');
-    var image3 = document.getElementById('image3');
-    var image4 = document.getElementById('image4');
+    let image1 = document.getElementById('image1');
+    let image2 = document.getElementById('image2');
+    let image3 = document.getElementById('image3');
+    let image4 = document.getElementById('image4');
 
     image1.src='images/Answer.png';
     image2.src='images/Answer.png';
     image3.src='images/Answer.png';
     image4.src='images/Answer.png';
 
+    setQuestions();
+
     timeoutActive = false;
 }
 
 function changeRightImages() {
-    var image1 = document.getElementById('image1');
-    var image2 = document.getElementById('image2');
-    var image3 = document.getElementById('image3');
-    var image4 = document.getElementById('image4');
+    let image1 = document.getElementById('image1');
+    let image2 = document.getElementById('image2');
+    let image3 = document.getElementById('image3');
+    let image4 = document.getElementById('image4');
 
     if (answered === false){
         if (answer1[0].answer === true) {
@@ -159,10 +237,10 @@ function changeRightImages() {
 }
 
 function changeWrongImages() {
-    var image1 = document.getElementById('image1');
-    var image2 = document.getElementById('image2');
-    var image3 = document.getElementById('image3');
-    var image4 = document.getElementById('image4');
+    let image1 = document.getElementById('image1');
+    let image2 = document.getElementById('image2');
+    let image3 = document.getElementById('image3');
+    let image4 = document.getElementById('image4');
 
     if (answered === false){
         if (answer1[0].answer === false && clickedImage === 1) {
@@ -181,14 +259,13 @@ function changeWrongImages() {
 }
 
 function changeFunction() {
-    checkQuestion();
-    changeImages();
-    answered = false;
-}
+    if(question === numbersOfQuestions){
+        document.location.href = 'winScreen.html'
+    }
 
-function timeoutFunction() {
-    if (timeoutActive === false){
-    timeoutActive = true;
-    window.setTimeout(changeFunction,3000);
+    if (answered === true){
+        checkQuestion();
+        changeImages();
+        answered = false;
     }
 }
