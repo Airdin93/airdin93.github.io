@@ -12,7 +12,7 @@ let clickedImage;
 
 let answered = false;
 
-//sessionStorage.SessionName
+sessionStorage.SessionName
 
 //sessionStorage.SessionName = rightAnswersCounter;
 
@@ -35,7 +35,7 @@ function hideElements(){
     document.getElementById("test1").style.display = "none";
 }
 
-function sessionStorage() {
+function thisSessionStorage() {
     sessionStorage.setItem("SessionName",rightAnswersCounter);
 }
 
@@ -56,8 +56,8 @@ function windowCheck() {
 }
 
 function winMessage() {
-    //document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
     document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
+    //document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
 }
 
 function setQuestions() {
@@ -260,7 +260,7 @@ function changeWrongImages() {
 
 function changeFunction() {
     if(question === numbersOfQuestions){
-        sessionStorage();
+        thisSessionStorage();
         document.location.href = 'winScreen.html'
     }
 
