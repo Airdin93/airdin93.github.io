@@ -12,7 +12,7 @@ let clickedImage;
 
 let answered = false;
 
-sessionStorage.SessionName
+//sessionStorage.SessionName
 
 //sessionStorage.SessionName = rightAnswersCounter;
 
@@ -57,7 +57,6 @@ function windowCheck() {
 
 function winMessage() {
     document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
-    //document.getElementById("redMango").innerHTML = "Congratulation you got " + sessionStorage.getItem("SessionName") + " questions right!"
 }
 
 function setQuestions() {
@@ -65,29 +64,6 @@ function setQuestions() {
     document.getElementById("test2").innerHTML = answer1[1].question;
     document.getElementById("test3").innerHTML = answer1[2].question;
     document.getElementById("test4").innerHTML = answer1[3].question;
-
-    /*
-    let image1 = document.getElementById('image1');
-    let image2 = document.getElementById('image2');
-    let image3 = document.getElementById('image3');
-    let image4 = document.getElementById('image4');
-
-    image1.src='images/Answer.png';
-    image2.src='images/Answer.png';
-    image3.src='images/Answer.png';
-    image4.src='images/Answer.png';
-
-
-    document.getElementById("image1").style.width = "300px";
-    document.getElementById("image1").style.height = "300px";
-    document.getElementById("image2").style.width = "300px";
-    document.getElementById("image2").style.height = "300px";
-    document.getElementById("image3").style.width = "300px";
-    document.getElementById("image3").style.height = "300px";
-    document.getElementById("image4").style.width = "300px";
-    document.getElementById("image4").style.height = "300px";
-    */
-
 }
 
 function question1() {
