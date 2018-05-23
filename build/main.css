@@ -25727,7 +25727,7 @@ ion-navbar.toolbar {
   }
   #signupBox {
     height: 30%;
-    margin: 60% auto 0 auto;
+    margin: 50% auto 0 auto;
   }
 }
 
@@ -26204,7 +26204,7 @@ ion-navbar.toolbar {
     width: 75%;
   }
   #resultsBox {
-    height: 48%;
+    height: 50%;
   }
   #confirmButton {
     width: 100px;
