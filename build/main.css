@@ -25886,7 +25886,7 @@ ion-navbar.toolbar {
   }
 }
 
-@media screen and (max-width: 408px) {
+@media screen and (max-width: 410px) {
   #startQuizContainer {
     margin: 7% 0 0 0;
   }
