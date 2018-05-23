@@ -25723,7 +25723,7 @@ ion-navbar.toolbar {
     width: 100px;
   }
   #signUpTextBox {
-    margin: 20% 0 0 0;
+    margin: 13% 0 0 0;
   }
   #signupBox {
     height: 30%;
@@ -25807,7 +25807,7 @@ ion-navbar.toolbar {
     font-size: 1.5em;
   }
   #startQuizBox {
-    height: 45%;
+    height: 55%;
   }
   #commitButton {
     width: 100px;
@@ -25882,16 +25882,17 @@ ion-navbar.toolbar {
     width: 90px;
   }
   #startQuizContainer {
-    margin: 12% 0 0 0;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  #startQuizContainer {
     margin: 7% 0 0 0;
   }
 }
 
+/*
+@media screen and (max-width: 408px){
+  #startQuizContainer{
+    margin: 7% 0 0 0;
+  }
+}
+*/
 @font-face {
   font-family: ProximaNovaAltRegular;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
@@ -26203,7 +26204,7 @@ ion-navbar.toolbar {
     width: 75%;
   }
   #resultsBox {
-    height: 40%;
+    height: 48%;
   }
   #confirmButton {
     width: 100px;
