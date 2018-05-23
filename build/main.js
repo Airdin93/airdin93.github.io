@@ -4,54 +4,6 @@ webpackJsonp([6],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailSignupPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email_signup_success_email_signup_success__ = __webpack_require__(101);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the EmailSignupPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var EmailSignupPage = /** @class */ (function () {
-    function EmailSignupPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.emailSignupSuccessPage = __WEBPACK_IMPORTED_MODULE_2__email_signup_success_email_signup_success__["a" /* EmailSignupSuccessPage */];
-    }
-    EmailSignupPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad EmailSignupPage');
-    };
-    EmailSignupPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-email-signup',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\email-signup\email-signup.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/email-signup.jpg\');\n    background-image: url(\'assets/imgs/email-signup.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #64605d;\n    ">\n  <!--<p>Du er nu signed up!</p>-->\n  <!--<p [navPush]="emailSignupSuccessPage">Submit Email For a Coupon</p>-->\n\n\n  <div id="signupBox">\n    <div id="signUpTextBox">\n      <p>Du er nu tilmeld</p>\n      <p>Vi håber at se dig på Tirpitz museet!</p>\n    </div>\n  </div>\n\n  <!--<p onclick="reloadQuiz()">Go Back To Start Of Quiz</p>-->\n\n  <img src="assets/imgs/CommitButton.png" id="commitButtonEmailSignUp" onclick="reloadQuiz()">\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\email-signup\email-signup.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], EmailSignupPage);
-    return EmailSignupPage;
-}());
-
-//# sourceMappingURL=email-signup.js.map
-
-/***/ }),
-
-/***/ 101:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailSignupSuccessPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
@@ -96,14 +48,14 @@ var EmailSignupSuccessPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 102:
+/***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameRulesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quiz_quiz__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quiz_quiz__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -133,7 +85,7 @@ var GameRulesPage = /** @class */ (function () {
     };
     GameRulesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-game-rules',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\game-rules\game-rules.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/game-rules.jpg\');\n    background-image: url(\'assets/imgs/game-rules.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #64605d;\n    ">\n\n  <h1 id="spilletsRegler">Spillets Regler</h1>\n\n  <div id="startQuizBox">\n    <!--<p>Game Rules</p>-->\n    <div id="startQuizTextContainer">\n      <p>Quizzen går ud på at der ved hvert spørgsmål er 4\n        svarmuligheder, hvortil der er 1 rigtigt svar.\n      </p>\n      <p>\n        Der er i alt 10 spørgsmål, hvor du skal bruge både din logik,\n        høresans og røresans.\n      </p>\n      <p>\n        Vælg en svarmulighed, og tryk på pilen nederst i højre\n        hjørne for at gå videre til det næste spørgsmål.\n      </p>\n    </div>\n  </div>\n  <img src="../../assets/imgs/CommitButton.png" id="commitButton" [navPush]="quizPage">\n  <img src="assets/imgs/CommitButton.png" id="commitButton" [navPush]="quizPage">\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\game-rules\game-rules.html"*/,
+            selector: 'page-game-rules',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\game-rules\game-rules.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/game-rules-new1.jpg\');\n    background-image: url(\'assets/imgs/game-rules-new1.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n\n  <h1 id="spilletsRegler">Spillets Regler</h1>\n\n  <div id="startQuizBox">\n    <!--<p>Game Rules</p>-->\n    <div id="startQuizTextContainer">\n      <p>Quizzen går ud på at der ved hvert spørgsmål er 4\n        svarmuligheder, hvortil der er 1 rigtigt svar.\n      </p>\n      <p>\n        Der er i alt 10 spørgsmål, hvor du skal bruge både din logik,\n        høresans og røresans.\n      </p>\n      <p>\n        Vælg en svarmulighed, og tryk på pilen nederst i højre\n        hjørne for at gå videre til det næste spørgsmål.\n      </p>\n    </div>\n  </div>\n  <img src="../../assets/imgs/CommitButton.png" id="commitButton" [navPush]="quizPage">\n  <img src="assets/imgs/CommitButton.png" id="commitButton" [navPush]="quizPage">\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\game-rules\game-rules.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], GameRulesPage);
@@ -144,14 +96,14 @@ var GameRulesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 103:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuizPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__results_results__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__results_results__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -181,7 +133,7 @@ var QuizPage = /** @class */ (function () {
     };
     QuizPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-quiz',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/quiz.jpg\');\n    background-image: url(\'assets/imgs/quiz.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #64605d;\n    ">\n  <!--\n  <p>Quiz</p>\n  <p [navPush]="resultsPage">Results</p>\n  -->\n\n    <div id="questionBox">\n      <h1 id="questionOf">Spørgsmål 1/5:</h1>   <!-- USE HIDE BLOCK?? -->\n      <h1 id="actualQuestion" >Hvad er 1 + 1?</h1>\n    </div>\n\n  <div id="questionsContainer">\n\n    <div id="question1">\n      <img src="assets/imgs/Answer.png" onclick="question1()" id="image1">\n      <p id="test1" onclick="question1()">question1</p>\n    </div>\n\n    <div id="question2">\n      <img src="assets/imgs/Answer.png" onclick="question2()" id="image2">\n      <p id="test2" onclick="question2()">question2</p>\n    </div>\n\n    <div id="question3">\n      <img src="assets/imgs/Answer.png" onclick="question3()" id="image3">\n      <p id="test3" onclick="question3()">question3</p>\n    </div>\n\n    <div id="question4">\n      <img src="assets/imgs/Answer.png" onclick="question4()" id="image4">\n      <p id="test4" onclick="question4()">question4</p>\n    </div>\n  </div>\n\n\n  <div>\n    <img src="assets/imgs/CommitButton.png" onclick="changeFunction()" id="confirmButtonQuiz">\n\n    <img src="assets/imgs/CommitButton.png" onload="hideWinscreenArrow()" onclick="thisSessionStorage()" id="winScreen" [navPush]="resultsPage">\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/,
+            selector: 'page-quiz',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/quiz-new1.jpg\');\n    background-image: url(\'assets/imgs/quiz-new1.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n  <!--\n  <p>Quiz</p>\n  <p [navPush]="resultsPage">Results</p>\n  -->\n\n    <div id="questionBox">\n      <h1 id="questionOf">Spørgsmål 1/5:</h1>   <!-- USE HIDE BLOCK?? -->\n      <h1 id="actualQuestion" >Hvad er 1 + 1?</h1>\n    </div>\n\n  <div id="questionsContainer">\n\n    <div id="question1">\n      <img src="assets/imgs/Answer.png" onclick="question1()" id="image1">\n      <p id="test1" onclick="question1()">question1</p>\n    </div>\n\n    <div id="question2">\n      <img src="assets/imgs/Answer.png" onclick="question2()" id="image2">\n      <p id="test2" onclick="question2()">question2</p>\n    </div>\n\n    <div id="question3">\n      <img src="assets/imgs/Answer.png" onclick="question3()" id="image3">\n      <p id="test3" onclick="question3()">question3</p>\n    </div>\n\n    <div id="question4">\n      <img src="assets/imgs/Answer.png" onclick="question4()" id="image4">\n      <p id="test4" onclick="question4()">question4</p>\n    </div>\n  </div>\n\n\n  <div>\n    <img src="assets/imgs/CommitButton.png" onclick="changeFunction()" id="confirmButtonQuiz">\n\n    <img src="assets/imgs/CommitButton.png" onload="hideWinscreenArrow()" onclick="thisSessionStorage()" id="winScreen" [navPush]="resultsPage">\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], QuizPage);
@@ -192,14 +144,14 @@ var QuizPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 104:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResultsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email_signup_email_signup__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email_signup_email_signup__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -229,7 +181,7 @@ var ResultsPage = /** @class */ (function () {
     };
     ResultsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-results',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\results\results.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/results.jpg\');\n    background-image: url(\'assets/imgs/results.jpg\');\n    background-size: 2000px;\n    background-position: center center;\n    background-color: #64605d;\n    ">\n  <!--<p>Results</p>-->\n  <div id="thanksMessageBox">\n    <h1 id="thanksMessage">Tak fordi du spillede med!</h1>\n  </div>\n\n  <!--<p [navPush]="emailSignupPage">Sign up for a Coupon</p>-->\n\n  <div id="resultsBox">\n    <p id="results">Results Here</p>\n\n    <div id="textBox1">\n      <p>Vi håber du lærte noget spændende om Tirpitz.</p>\n    </div>\n    <div id="textBox2">\n      <p>Du kan skrive din email for at modtage en rabatkupon til dit besøg på museet og nyhedsbreve.</p>\n      <div id="email">\n        <p>Email:</p>\n        <input type="text" name="firstname" value="">\n      </div>\n    </div>\n\n  </div>\n  <img src="assets/imgs/CommitButton.png" onload="winMessage()" onclick="changeFunction()" id="confirmButton" [navPush]="emailSignupPage">\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\results\results.html"*/,
+            selector: 'page-results',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\results\results.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/results-new1.jpg\');\n    background-image: url(\'assets/imgs/results-new1.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n  <!--<p>Results</p>-->\n  <div id="thanksMessageBox">\n    <h1 id="thanksMessage">Tak fordi du spillede med!</h1>\n  </div>\n\n  <!--<p [navPush]="emailSignupPage">Sign up for a Coupon</p>-->\n\n  <div id="resultsBox">\n    <p id="results">Results Here</p>\n\n    <div id="textBox1">\n      <p>Vi håber du lærte noget spændende om Tirpitz.</p>\n    </div>\n    <div id="textBox2">\n      <p>Du kan skrive din email for at modtage en rabatkupon til dit besøg på museet og nyhedsbreve.</p>\n      <div id="email">\n        <p>Email:</p>\n        <input type="text" name="firstname" value="">\n      </div>\n    </div>\n\n  </div>\n  <img src="assets/imgs/CommitButton.png" onload="winMessage()" onclick="changeFunction()" id="confirmButton" [navPush]="emailSignupPage">\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\results\results.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], ResultsPage);
@@ -237,6 +189,54 @@ var ResultsPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=results.js.map
+
+/***/ }),
+
+/***/ 104:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailSignupPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__email_signup_success_email_signup_success__ = __webpack_require__(100);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the EmailSignupPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var EmailSignupPage = /** @class */ (function () {
+    function EmailSignupPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.emailSignupSuccessPage = __WEBPACK_IMPORTED_MODULE_2__email_signup_success_email_signup_success__["a" /* EmailSignupSuccessPage */];
+    }
+    EmailSignupPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad EmailSignupPage');
+    };
+    EmailSignupPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-email-signup',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\email-signup\email-signup.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/results-new1.jpg\');\n    background-image: url(\'assets/imgs/results-new1.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n  <!--<p>Du er nu signed up!</p>-->\n  <!--<p [navPush]="emailSignupSuccessPage">Submit Email For a Coupon</p>-->\n\n\n  <div id="signupBox">\n    <div id="signUpTextBox">\n      <p>Du er nu tilmeld</p>\n      <p>Vi håber at se dig på Tirpitz museet!</p>\n    </div>\n  </div>\n\n  <!--<p onclick="reloadQuiz()">Go Back To Start Of Quiz</p>-->\n\n  <img src="assets/imgs/CommitButton.png" id="commitButtonEmailSignUp" onclick="reloadQuiz()">\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\email-signup\email-signup.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], EmailSignupPage);
+    return EmailSignupPage;
+}());
+
+//# sourceMappingURL=email-signup.js.map
 
 /***/ }),
 
@@ -262,27 +262,27 @@ webpackEmptyAsyncContext.id = 114;
 
 var map = {
 	"../pages/email-signup-success/email-signup-success.module": [
-		275,
+		274,
 		5
 	],
 	"../pages/email-signup/email-signup.module": [
-		274,
+		275,
 		4
 	],
 	"../pages/game-rules/game-rules.module": [
-		276,
+		277,
 		3
 	],
 	"../pages/home/home.module": [
-		277,
+		276,
 		2
 	],
 	"../pages/quiz/quiz.module": [
-		279,
+		278,
 		1
 	],
 	"../pages/results/results.module": [
-		278,
+		279,
 		0
 	]
 };
@@ -328,11 +328,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(273);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_game_rules_game_rules__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_quiz_quiz__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_results_results__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_email_signup_email_signup__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_email_signup_success_email_signup_success__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_game_rules_game_rules__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_quiz_quiz__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_results_results__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_email_signup_email_signup__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_email_signup_success_email_signup_success__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -369,12 +369,12 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/email-signup/email-signup.module#EmailSignupPageModule', name: 'EmailSignupPage', segment: 'email-signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/email-signup-success/email-signup-success.module#EmailSignupSuccessPageModule', name: 'EmailSignupSuccessPage', segment: 'email-signup-success', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/game-rules/game-rules.module#GameRulesPageModule', name: 'GameRulesPage', segment: 'game-rules', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/email-signup/email-signup.module#EmailSignupPageModule', name: 'EmailSignupPage', segment: 'email-signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/results/results.module#ResultsPageModule', name: 'ResultsPage', segment: 'results', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/quiz/quiz.module#QuizPageModule', name: 'QuizPage', segment: 'quiz', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/game-rules/game-rules.module#GameRulesPageModule', name: 'GameRulesPage', segment: 'game-rules', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quiz/quiz.module#QuizPageModule', name: 'QuizPage', segment: 'quiz', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/results/results.module#ResultsPageModule', name: 'ResultsPage', segment: 'results', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -455,7 +455,7 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__game_rules_game_rules__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__game_rules_game_rules__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -485,7 +485,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/home.jpg\');\n    background-image: url(\'assets/imgs/home.jpg\');\n    background-size: 2100px;\n    background-position: center center;\n    background-color: #64605d;\n    ">\n  <div id="tirpitz-logo">\n    <img src="assets/imgs/tirpitz_yellow.gif">\n  </div>\n\n  <div id="startGameBox" [navPush]="gameRulesPage">\n    <!--<p>Start Quiz</p>-->\n    <div id="startQuizContainer">\n      <p>Start Quiz</p>\n      <img src="assets/imgs/black-arrow-hi.png" id="blackArrow">\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/home-new1.jpg\');\n    background-image: url(\'assets/imgs/home-new1.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n  <div id="tirpitz-logo">\n    <img src="assets/imgs/tirpitz_yellow.gif">\n  </div>\n\n  <div id="startGameBox" [navPush]="gameRulesPage">\n    <!--<p>Start Quiz</p>-->\n    <div id="startQuizContainer">\n      <p>Start Quiz</p>\n      <img src="assets/imgs/black-arrow-hi.png" id="blackArrow">\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], HomePage);

@@ -25686,7 +25686,9 @@ ion-navbar.toolbar {
 
 #signupBox {
   width: 70%;
-  height: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
@@ -25706,7 +25708,7 @@ ion-navbar.toolbar {
 #signUpTextBox {
   color: #000000;
   text-align: center;
-  margin: 12% 0 0 0;
+  margin: 12% 0 12% 0;
 }
 
 @media screen and (max-width: 1366px) {
@@ -25726,14 +25728,7 @@ ion-navbar.toolbar {
     margin: 13% 0 0 0;
   }
   #signupBox {
-    height: 30%;
     margin: 50% auto 0 auto;
-  }
-}
-
-@media screen and (max-width: 408px) {
-  #signUpTextBox {
-    margin: 13% 0 0 0;
   }
 }
 
@@ -25759,7 +25754,9 @@ ion-navbar.toolbar {
 
 #startQuizBox {
   width: 70%;
-  height: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
   margin: 7% 0 0 15%;
@@ -25767,7 +25764,7 @@ ion-navbar.toolbar {
 }
 
 #startQuizTextContainer {
-  padding: 7% 2% 0 2%;
+  padding: 7% 2% 7% 2%;
 }
 
 #startQuizTextContainer p {
@@ -25806,23 +25803,8 @@ ion-navbar.toolbar {
   #startQuizTextContainer p {
     font-size: 1.5em;
   }
-  #startQuizBox {
-    height: 55%;
-  }
   #commitButton {
     width: 100px;
-  }
-}
-
-@media screen and (max-width: 408px) {
-  #startQuizBox {
-    height: 55%;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  #startQuizBox {
-    height: 55%;
   }
 }
 
@@ -25838,7 +25820,9 @@ ion-navbar.toolbar {
 
 #startGameBox {
   width: 70%;
-  height: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
@@ -25858,7 +25842,7 @@ ion-navbar.toolbar {
 
 #startQuizContainer {
   text-align: center;
-  margin: 7% 0 0 0;
+  margin: 7% 0 7% 0;
 }
 
 @media screen and (max-width: 1366px) {
@@ -25886,13 +25870,6 @@ ion-navbar.toolbar {
   }
 }
 
-/*
-@media screen and (max-width: 408px){
-  #startQuizContainer{
-    margin: 7% 0 0 0;
-  }
-}
-*/
 @font-face {
   font-family: ProximaNovaAltRegular;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.ttf") format("truetype");
@@ -25961,7 +25938,7 @@ ion-navbar.toolbar {
 
 #actualQuestion {
   font-size: 4em;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   font-family: ProximaNovaAltSemibold;
 }
@@ -26114,7 +26091,9 @@ ion-navbar.toolbar {
 
 #resultsBox {
   width: 70%;
-  height: 45%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
@@ -26141,6 +26120,10 @@ ion-navbar.toolbar {
 #textBox2, #textBox1 {
   text-align: center;
   font-size: 2.5em;
+}
+
+#textBox2 {
+  margin: 0 0 5% 0;
 }
 
 #email {
@@ -26185,7 +26168,7 @@ ion-navbar.toolbar {
     font-size: 3em;
   }
   #thanksMessageBox {
-    width: 400px;
+    width: 414px;
     margin: 15% 0 0 0;
   }
   #results {
@@ -26203,22 +26186,13 @@ ion-navbar.toolbar {
   #email input {
     width: 75%;
   }
-  #resultsBox {
-    height: 50%;
-  }
   #confirmButton {
     width: 100px;
   }
 }
 
-@media screen and (max-width: 408px) {
-  #resultsBox {
-    height: 48%;
-  }
-}
-
 @media screen and (max-width: 376px) {
-  #resultsBox {
-    height: 48%;
+  #thanksMessageBox {
+    width: 375px;
   }
 }
