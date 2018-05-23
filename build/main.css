@@ -25795,7 +25795,7 @@ ion-navbar.toolbar {
 @media screen and (max-width: 415px) {
   #spilletsRegler {
     font-size: 3em;
-    padding: 25% 0 0 0;
+    padding: 15% 0 0 0;
   }
   #startQuizTextContainer p {
     font-size: 1.5em;
@@ -25805,6 +25805,12 @@ ion-navbar.toolbar {
   }
   #commitButton {
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #startQuizBox {
+    height: 55%;
   }
 }
 
@@ -25851,7 +25857,7 @@ ion-navbar.toolbar {
 
 @media screen and (max-width: 415px) {
   #tirpitz-logo {
-    padding: 25% 10% 5% 10%;
+    padding: 15% 10% 5% 10%;
   }
   #startGameBox {
     height: 30%;
@@ -26020,7 +26026,7 @@ ion-navbar.toolbar {
 
 @media screen and (max-width: 415px) {
   #questionBox {
-    padding: 25% 0 0 0;
+    padding: 15% 0 0 0;
   }
   #questionOf {
     font-size: 3em;
@@ -26161,7 +26167,7 @@ ion-navbar.toolbar {
   }
   #thanksMessageBox {
     width: 400px;
-    margin: 25% 0 0 0;
+    margin: 15% 0 0 0;
   }
   #results {
     font-size: 2em;
@@ -26178,7 +26184,16 @@ ion-navbar.toolbar {
   #email input {
     width: 75%;
   }
+  #resultsBox {
+    height: 40%;
+  }
   #confirmButton {
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #resultsBox {
+    height: 48%;
   }
 }
