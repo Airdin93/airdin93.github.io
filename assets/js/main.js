@@ -1,7 +1,3 @@
-//window.onload = windowCheck;
-
-//window.onload = startUp();
-
 let rightAnswersCounter = 0;
 
 let question = 1;
@@ -14,14 +10,6 @@ let clickedImage;
 
 let answered = false;
 
-//sessionStorage.SessionName
-
-//sessionStorage.SessionName = rightAnswersCounter;
-
-//sessionStorage.getItem("SessionName");
-
-//sessionStorage.setItem("SessionName",rightAnswersCounter);
-
 let answer1 =[
     {answer: true, question: "question1"},
     {answer: false, question: "question2"},
@@ -31,49 +19,18 @@ let answer1 =[
 ];
 
 function hideWinscreenArrow() {
-  document.getElementById("winScreen").style.display = "none"
-}
-
-function hideElements(){
-    document.getElementById("image1").style.display = "none";
-    document.getElementById("image2").style.display = "none";
-    document.getElementById("image3").style.display = "none";
-    document.getElementById("image4").style.display = "none";
-    document.getElementById("test1").style.display = "none";
-}
-
-function thisSessionStorage() {
-    sessionStorage.setItem("SessionName",rightAnswersCounter);
-}
-
-//DELETE THIS
-function test() {
-    console.log(rightAnswersCounter);
-    //hideElements();
-
-}
-
-
-function windowCheck() {
-    if (window.location.href.match('quiz.html')){
-        setQuestions();
-    }
-    else if (window.location.href.match('winScreen.html')){
-        winMessage();
-    }
+    document.getElementById("winScreen").style.display = "none"
 }
 
 function winMessage() {
-  console.log("Will it print?");
-  //document.getElementById("redMango").innerHTML = "Mango!";
     document.getElementById("results").innerHTML = "Du havde " + sessionStorage.getItem("SessionName")+ "/" + numbersOfQuestions + " rigtige!"
 }
 
 function setQuestions() {
-    document.getElementById("test1").innerHTML = answer1[0].question;
-    document.getElementById("test2").innerHTML = answer1[1].question;
-    document.getElementById("test3").innerHTML = answer1[2].question;
-    document.getElementById("test4").innerHTML = answer1[3].question;
+    document.getElementById("answerToQuestion1").innerHTML = answer1[0].question;
+    document.getElementById("answerToQuestion2").innerHTML = answer1[1].question;
+    document.getElementById("answerToQuestion3").innerHTML = answer1[2].question;
+    document.getElementById("answerToQuestion4").innerHTML = answer1[3].question;
     document.getElementById("actualQuestion").innerHTML = answer1[4].actualQuestion;
     document.getElementById("questionOf").innerHTML = 'Spørgsmål ' + question + '/' + numbersOfQuestions +':'
 }
@@ -83,7 +40,6 @@ function question1() {
         clickedImage = 1;
         if (answer1[0].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 1 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -97,7 +53,6 @@ function question2() {
         clickedImage = 2;
         if (answer1[1].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 2 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -111,7 +66,6 @@ function question3() {
         clickedImage = 3;
         if (answer1[2].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 3 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -125,7 +79,6 @@ function question4() {
         clickedImage = 4;
         if (answer1[3].answer === true) {
             rightAnswersCounter++;
-            console.log("answer 4 is true");
             changeRightImages();
         }
         changeWrongImages();
@@ -137,31 +90,20 @@ function question4() {
 function checkQuestion(){
     if (question === 1){
         answerIs2();
-        console.log("answerIs2() active")
         question++;
     }
     else if (question === 2){
         answerIs3();
-        console.log("answerIs3() active")
         question++;
     }
     else if (question === 3){
         answerIs4();
-        console.log("answerIs4() active")
         question++;
     }
     else if (question === 4){
         answerIs5();
-        console.log("answerIs5() active")
         question++;
     }
-}
-
-function showWinArrow(){
-  if(question === numbersOfQuestions){
-    document.getElementById("confirmButtonQuiz").style.display = "none"
-    document.getElementById("winScreen").style.display = "block"
-  }
 }
 
 function answerIs1() {
@@ -214,11 +156,18 @@ function answerIs5() {
     ];
 }
 
+function showWinArrow(){
+  if(question === numbersOfQuestions){
+    document.getElementById("confirmButtonQuiz").style.display = "none"
+    document.getElementById("winScreen").style.display = "block"
+  }
+}
+
 function changeImages() {
-    let image1 = document.getElementById('image1');
-    let image2 = document.getElementById('image2');
-    let image3 = document.getElementById('image3');
-    let image4 = document.getElementById('image4');
+    let image1 = document.getElementById('buttonImage1');
+    let image2 = document.getElementById('buttonImage2');
+    let image3 = document.getElementById('buttonImage3');
+    let image4 = document.getElementById('buttonImage4');
 
     image1.src='assets/imgs/Answer.png';
     image2.src='assets/imgs/Answer.png';
@@ -231,10 +180,10 @@ function changeImages() {
 }
 
 function changeRightImages() {
-    let image1 = document.getElementById('image1');
-    let image2 = document.getElementById('image2');
-    let image3 = document.getElementById('image3');
-    let image4 = document.getElementById('image4');
+    let image1 = document.getElementById('buttonImage1');
+    let image2 = document.getElementById('buttonImage2');
+    let image3 = document.getElementById('buttonImage3');
+    let image4 = document.getElementById('buttonImage4');
 
     if (answered === false){
         if (answer1[0].answer === true) {
@@ -253,10 +202,10 @@ function changeRightImages() {
 }
 
 function changeWrongImages() {
-    let image1 = document.getElementById('image1');
-    let image2 = document.getElementById('image2');
-    let image3 = document.getElementById('image3');
-    let image4 = document.getElementById('image4');
+    let image1 = document.getElementById('buttonImage1');
+    let image2 = document.getElementById('buttonImage2');
+    let image3 = document.getElementById('buttonImage3');
+    let image4 = document.getElementById('buttonImage4');
 
     if (answered === false){
         if (answer1[0].answer === false && clickedImage === 1) {
@@ -277,9 +226,6 @@ function changeWrongImages() {
 function changeFunction() {
     if(question === numbersOfQuestions){
         thisSessionStorage();
-        //document.location.href = 'winScreen.html'
-        //document.getElementById("confirmButton").style.display = "none"
-        //document.getElementById("winScreen").style.display = "block"
     }
 
     if (answered === true){
@@ -289,6 +235,9 @@ function changeFunction() {
     }
 }
 
+function thisSessionStorage() {
+  sessionStorage.setItem("SessionName",rightAnswersCounter);
+}
 
 function reloadQuiz() {
   location.reload();

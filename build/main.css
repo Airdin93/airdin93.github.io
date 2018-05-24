@@ -25697,18 +25697,18 @@ ion-navbar.toolbar {
   font-size: 3em;
 }
 
+#signUpTextBox {
+  color: #000000;
+  text-align: center;
+  margin: 12% 0 12% 0;
+}
+
 #commitButtonEmailSignUp {
   width: 200px;
   position: absolute;
   bottom: 0px;
   right: 0px;
   margin: 30px;
-}
-
-#signUpTextBox {
-  color: #000000;
-  text-align: center;
-  margin: 12% 0 12% 0;
 }
 
 @media screen and (max-width: 1366px) {
@@ -25721,14 +25721,14 @@ ion-navbar.toolbar {
 }
 
 @media screen and (max-width: 415px) {
-  #commitButtonEmailSignUp {
-    width: 100px;
+  #signupBox {
+    margin: 50% auto 0 auto;
   }
   #signUpTextBox {
     margin: 13% 0 0 0;
   }
-  #signupBox {
-    margin: 50% auto 0 auto;
+  #commitButtonEmailSignUp {
+    width: 100px;
   }
 }
 
@@ -25836,13 +25836,13 @@ ion-navbar.toolbar {
   color: #000000;
 }
 
-#blackArrow {
-  width: 200px;
-}
-
 #startQuizContainer {
   text-align: center;
   margin: 7% 0 7% 0;
+}
+
+#blackArrow {
+  width: 200px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -25862,11 +25862,11 @@ ion-navbar.toolbar {
   #startGameBox p {
     font-size: 4em;
   }
-  #blackArrow {
-    width: 90px;
-  }
   #startQuizContainer {
     margin: 7% 0 0 0;
+  }
+  #blackArrow {
+    width: 90px;
   }
 }
 
@@ -25888,40 +25888,8 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
 }
 
-#confirmButtonQuiz {
-  width: 200px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  margin: 30px;
-}
-
-#winScreen {
-  width: 200px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  margin: 30px;
-}
-
-#questionsContainer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 1120px;
-  margin: 60px 0 0 0;
-  position: absolute;
-  left: 50%;
-  margin-left: -560px;
+.scroll-content {
+  padding: 0 !important;
 }
 
 #questionBox {
@@ -25943,16 +25911,24 @@ ion-navbar.toolbar {
   font-family: ProximaNovaAltSemibold;
 }
 
-#test1, #test2, #test3, #test4 {
+#questionsContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 1120px;
+  margin: 60px 0 0 0;
   position: absolute;
-  font-family: ProximaNovaAltRegular;
-  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: black;
-  font-size: 2.5em;
+  margin-left: -560px;
 }
 
 #question1, #question2, #question3, #question4 {
@@ -25976,20 +25952,45 @@ ion-navbar.toolbar {
   margin: 0 120px 0 0;
 }
 
-.scroll-content {
-  padding: 0 !important;
-}
-
-#image1, #image2, #image3, #image4 {
+#buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4 {
   width: 1000px;
   height: 180px;
   opacity: 0.5;
 }
 
+#answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4 {
+  position: absolute;
+  font-family: ProximaNovaAltRegular;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: black;
+  font-size: 2.5em;
+}
+
+#confirmButtonQuiz {
+  width: 200px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+}
+
+#winScreen {
+  width: 200px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+}
+
 @media screen and (max-width: 1366px) {
-  #image1, #image2, #image3, #image4 {
-    width: 300px;
-    height: 120px;
+  #questionsContainer {
+    width: 1020px;
+    margin: 60px 0 0 0;
+    margin-left: -340px;
   }
   #question1 {
     margin: 0 80px 40px 0;
@@ -26004,13 +26005,12 @@ ion-navbar.toolbar {
     width: 300px;
     height: 125px;
   }
-  #questionsContainer {
-    width: 1020px;
-    margin: 60px 0 0 0;
-    margin-left: -340px;
-  }
-  #test1, #test2, #test3, #test4 {
+  #answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4 {
     font-size: 2em;
+  }
+  #buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4 {
+    width: 300px;
+    height: 120px;
   }
   #confirmButtonQuiz {
     width: 160px;
@@ -26030,9 +26030,12 @@ ion-navbar.toolbar {
   #actualQuestion {
     font-size: 2em;
   }
-  #image1, #image2, #image3, #image4 {
-    width: 140px;
-    height: 90px;
+  #questionsContainer {
+    width: 320px;
+    margin: 80px 0 0 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
   }
   #question1 {
     margin: 0 40px 20px 0;
@@ -26047,15 +26050,12 @@ ion-navbar.toolbar {
     width: 140px;
     height: 95px;
   }
-  #questionsContainer {
-    width: 320px;
-    margin: 80px 0 0 0;
-    position: absolute;
-    left: 50%;
-    margin-left: -160px;
-  }
-  #test1, #test2, #test3, #test4 {
+  #answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4 {
     font-size: 1.5em;
+  }
+  #buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4 {
+    width: 140px;
+    height: 90px;
   }
   #confirmButtonQuiz {
     width: 100px;
@@ -26077,16 +26077,16 @@ ion-navbar.toolbar {
   src: url("../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
 }
 
-#thanksMessage {
-  font-size: 8em;
-  color: #f8d747;
-  text-align: center;
-}
-
 #thanksMessageBox {
   width: 1000px;
   margin: 5% auto 0 auto;
   font-family: ProximaNovaAltBold;
+}
+
+#thanksMessage {
+  font-size: 8em;
+  color: #f8d747;
+  text-align: center;
 }
 
 #resultsBox {
@@ -26097,7 +26097,7 @@ ion-navbar.toolbar {
   font-family: ProximaNovaAltSemibold;
   background-color: rgba(255, 255, 255, 0.5);
   border: solid;
-  margin: 7% 0 0 15%;
+  margin: 5% 0 0 15%;
   color: #ffffff;
 }
 
