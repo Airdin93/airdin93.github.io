@@ -25732,6 +25732,12 @@ ion-navbar.toolbar {
   }
 }
 
+@media screen and (max-width: 360px) {
+  #signupBox {
+    font-size: 1em;
+  }
+}
+
 @font-face {
   font-family: ProximaNovaAltSemibold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
@@ -25808,6 +25814,12 @@ ion-navbar.toolbar {
   }
 }
 
+@media screen and (max-width: 360px) {
+  #startQuizTextContainer p {
+    font-size: 1.2em;
+  }
+}
+
 @font-face {
   font-family: ProximaNovaAltSemibold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.ttf") format("truetype");
@@ -25867,6 +25879,12 @@ ion-navbar.toolbar {
   }
   #blackArrow {
     width: 90px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #startGameBox p {
+    font-size: 3em;
   }
 }
 
@@ -26068,6 +26086,15 @@ ion-navbar.toolbar {
   }
 }
 
+@media screen and (max-width: 360px) {
+  #questionOf {
+    font-size: 2.5em;
+  }
+  #actualQuestion {
+    font-size: 1em;
+  }
+}
+
 @font-face {
   font-family: ProximaNovaAltBold;
   src: url("../../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.ttf") format("truetype");
@@ -26081,7 +26108,7 @@ ion-navbar.toolbar {
 }
 
 #thanksMessageBox {
-  width: 1000px;
+  width: 100%;
   margin: 5% auto 0 auto;
   font-family: ProximaNovaAltBold;
 }
@@ -26171,8 +26198,7 @@ ion-navbar.toolbar {
     font-size: 3em;
   }
   #thanksMessageBox {
-    width: 414px;
-    margin: 15% 0 0 0;
+    margin: 15% auto 0 auto;
   }
   #results {
     font-size: 2em;
@@ -26194,8 +26220,11 @@ ion-navbar.toolbar {
   }
 }
 
-@media screen and (max-width: 376px) {
-  #thanksMessageBox {
-    width: 375px;
+@media screen and (max-width: 360px) {
+  #results {
+    font-size: 1.5em;
+  }
+  #textBox2, #textBox1 {
+    font-size: 1em;
   }
 }
