@@ -4,10 +4,58 @@ webpackJsonp([5],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__game_rules_game_rules__ = __webpack_require__(101);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the HomePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HomePage = /** @class */ (function () {
+    function HomePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.gameRulesPage = __WEBPACK_IMPORTED_MODULE_2__game_rules_game_rules__["a" /* GameRulesPage */];
+    }
+    HomePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HomePage');
+    };
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/home.jpg\');\n    background-image: url(\'assets/imgs/home.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n\n  <div id="tirpitz-logo">\n    <img src="assets/imgs/tirpitz_yellow.gif">\n  </div>\n\n  <div id="startGameBox" [navPush]="gameRulesPage">\n    <div id="startQuizContainer">\n      <p>Start Quiz</p>\n      <img src="assets/imgs/black-arrow.png" id="blackArrow">\n    </div>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 101:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameRulesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quiz_quiz__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quiz_quiz__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -48,14 +96,14 @@ var GameRulesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 101:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuizPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__results_results__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__results_results__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -85,7 +133,7 @@ var QuizPage = /** @class */ (function () {
     };
     QuizPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-quiz',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/quiz.jpg\');\n    background-image: url(\'assets/imgs/quiz.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n\n    <div id="questionBox">\n      <h1 id="questionOf">Spørgsmål 1/5:</h1>   <!-- USE HIDE BLOCK?? -->\n      <h1 id="actualQuestion" >Hvad er 1 + 1?</h1>\n    </div>\n\n  <div id="questionsContainer">\n    <div id="question1">\n      <img src="assets/imgs/Answer.png" onclick="question1()" id="buttonImage1">\n      <p id="answerToQuestion1" onclick="question1()">question1</p>\n    </div>\n\n    <div id="question2">\n      <img src="assets/imgs/Answer.png" onclick="question2()" id="buttonImage2">\n      <p id="answerToQuestion2" onclick="question2()">question2</p>\n    </div>\n\n    <div id="question3">\n      <img src="assets/imgs/Answer.png" onclick="question3()" id="buttonImage3">\n      <p id="answerToQuestion3" onclick="question3()">question3</p>\n    </div>\n\n    <div id="question4">\n      <img src="assets/imgs/Answer.png" onclick="question4()" id="buttonImage4">\n      <p id="answerToQuestion4" onclick="question4()">question4</p>\n    </div>\n  </div>\n\n  <div>\n    <img src="assets/imgs/CommitButton.png" onclick="changeFunction()" id="confirmButtonQuiz">\n    <img src="assets/imgs/CommitButton.png" onload="hideWinscreenArrow()" onclick="thisSessionStorage()" id="winScreen" [navPush]="resultsPage">\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/,
+            selector: 'page-quiz',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/quiz.jpg\');\n    background-image: url(\'assets/imgs/quiz.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n\n    <div id="questionBox">\n      <h1 id="questionOf">Spørgsmål 1/10:</h1>   <!-- USE HIDE BLOCK?? -->\n      <h1 id="actualQuestion" >Hvilken ting finder du i genstands kasse 1? (mærke)</h1>\n    </div>\n\n  <div id="questionsContainer">\n    <div id="question1">\n      <img src="assets/imgs/Answer.png" onclick="question1()" id="buttonImage1">\n      <p id="answerToQuestion1" onclick="question1()">En pung</p>\n    </div>\n\n    <div id="question2">\n      <img src="assets/imgs/Answer.png" onclick="question2()" id="buttonImage2">\n      <p id="answerToQuestion2" onclick="question2()">En sten fra en bunker</p>\n    </div>\n\n    <div id="question3">\n      <img src="assets/imgs/Answer.png" onclick="question3()" id="buttonImage3">\n      <p id="answerToQuestion3" onclick="question3()">En bog</p>\n    </div>\n\n    <div id="question4">\n      <img src="assets/imgs/Answer.png" onclick="question4()" id="buttonImage4">\n      <p id="answerToQuestion4" onclick="question4()">En lommeregner</p>\n    </div>\n  </div>\n\n  <div>\n    <img src="assets/imgs/CommitButton.png" onclick="changeFunction()" id="confirmButtonQuiz">\n    <img src="assets/imgs/CommitButton.png" onload="hideWinscreenArrow()" onclick="thisSessionStorage()" id="winScreen" [navPush]="resultsPage">\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\quiz\quiz.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], QuizPage);
@@ -96,7 +144,7 @@ var QuizPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -144,54 +192,6 @@ var ResultsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 103:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__game_rules_game_rules__ = __webpack_require__(100);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the HomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.gameRulesPage = __WEBPACK_IMPORTED_MODULE_2__game_rules_game_rules__["a" /* GameRulesPage */];
-    }
-    HomePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HomePage');
-    };
-    HomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/'<ion-content padding style="\n    background-image: url(\'../../assets/imgs/home.jpg\');\n    background-image: url(\'assets/imgs/home.jpg\');\n    background-size: cover;\n    background-position: center center;\n    background-color: #000000;\n    ">\n\n  <div id="tirpitz-logo">\n    <img src="assets/imgs/tirpitz_yellow.gif">\n  </div>\n\n  <div id="startGameBox" [navPush]="gameRulesPage">\n    <div id="startQuizContainer">\n      <p>Start Quiz</p>\n      <img src="assets/imgs/black-arrow.png" id="blackArrow">\n    </div>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\emilj\Documents\GitHub\Teampitz\src\pages\home\home.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], HomePage);
-    return HomePage;
-}());
-
-//# sourceMappingURL=home.js.map
-
-/***/ }),
-
 /***/ 113:
 /***/ (function(module, exports) {
 
@@ -218,19 +218,19 @@ var map = {
 		4
 	],
 	"../pages/game-rules/game-rules.module": [
-		274,
+		275,
 		3
 	],
 	"../pages/home/home.module": [
-		276,
+		274,
 		2
 	],
 	"../pages/quiz/quiz.module": [
-		277,
+		276,
 		1
 	],
 	"../pages/results/results.module": [
-		275,
+		277,
 		0
 	]
 };
@@ -275,10 +275,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_game_rules_game_rules__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_quiz_quiz__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_results_results__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_game_rules_game_rules__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_quiz_quiz__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_results_results__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_email_signup_success_email_signup_success__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -315,10 +315,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/email-signup-success/email-signup-success.module#EmailSignupPageModule', name: 'EmailSignupPage', segment: 'email-signup-success', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/game-rules/game-rules.module#GameRulesPageModule', name: 'GameRulesPage', segment: 'game-rules', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/results/results.module#ResultsPageModule', name: 'ResultsPage', segment: 'results', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/quiz/quiz.module#QuizPageModule', name: 'QuizPage', segment: 'quiz', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/game-rules/game-rules.module#GameRulesPageModule', name: 'GameRulesPage', segment: 'game-rules', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quiz/quiz.module#QuizPageModule', name: 'QuizPage', segment: 'quiz', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/results/results.module#ResultsPageModule', name: 'ResultsPage', segment: 'results', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -354,7 +354,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

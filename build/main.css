@@ -25895,6 +25895,7 @@ ion-navbar.toolbar {
 #questionBox {
   padding: 7% 0 0 0;
   text-align: center;
+  height: 35%;
 }
 
 #questionOf {
@@ -25905,7 +25906,7 @@ ion-navbar.toolbar {
 }
 
 #actualQuestion {
-  font-size: 4em;
+  font-size: 3em;
   color: #ffffff;
   margin: 0;
   font-family: ProximaNovaAltSemibold;
@@ -25925,7 +25926,7 @@ ion-navbar.toolbar {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1120px;
-  margin: 60px 0 0 0;
+  margin: 0 0 0 0;
   position: absolute;
   left: 50%;
   margin-left: -560px;
@@ -25967,7 +25968,8 @@ ion-navbar.toolbar {
   transform: translate(-50%, -50%);
   margin: 0;
   color: black;
-  font-size: 2.5em;
+  font-size: 2em;
+  width: 100%;
 }
 
 #confirmButtonQuiz {
@@ -26006,7 +26008,7 @@ ion-navbar.toolbar {
     height: 125px;
   }
   #answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4 {
     width: 300px;
@@ -26023,12 +26025,13 @@ ion-navbar.toolbar {
 @media screen and (max-width: 415px) {
   #questionBox {
     padding: 15% 0 0 0;
+    height: 20%;
   }
   #questionOf {
     font-size: 3em;
   }
   #actualQuestion {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #questionsContainer {
     width: 320px;
@@ -26051,7 +26054,7 @@ ion-navbar.toolbar {
     height: 95px;
   }
   #answerToQuestion1, #answerToQuestion2, #answerToQuestion3, #answerToQuestion4 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   #buttonImage1, #buttonImage2, #buttonImage3, #buttonImage4 {
     width: 140px;
