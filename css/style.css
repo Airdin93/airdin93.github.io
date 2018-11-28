@@ -199,7 +199,7 @@ nav ul li a {
     }
 
     #myLinks{
-        
+        display: none;
         font-family: 'Source Sans Pro', sans-serif;
     }
     
@@ -265,5 +265,11 @@ nav ul li a {
 
     .topnav{
         display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .languages{
+        display: none;
     }
 }
