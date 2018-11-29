@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    min-width: fit-content;
+    /* min-width: fit-content; */
 }
 
 a {
@@ -11,9 +11,11 @@ a {
 
     #header{
         display: grid;
+        position: relative;
         grid-template-columns: 110px max-content 1fr max-content max-content;
         height: 85px;
         background-color:#aca5a5;
+        z-index: 100;
     }
 
     #logoContainer{
