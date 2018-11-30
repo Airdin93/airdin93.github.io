@@ -1,10 +1,3 @@
-.site-content{
-    display: block;
-    overflow: auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* box-shadow: 5px 0px 10px rgba(0,0,0,0.2), -5px 0px 10px rgba(0,0,0,0.2); */
-}
 
 /*Slider*/
     /*jssor slider loading skin spin css*/
@@ -36,8 +29,6 @@
     .jssora051.jssora051dn {opacity:.5;}
     .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
 
-
-/*Hehe*/
 
 #jssor_1{
     border-bottom: 2px solid #b8b8b8;
