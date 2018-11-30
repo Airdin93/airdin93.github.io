@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
     /* min-width: fit-content; */
 }
 
@@ -38,10 +39,11 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Source Sans Pro', sans-serif;
+        /* font-family: 'Source Sans Pro', sans-serif; */
         margin: 0;
         font-size: 2.4em;
         height: 85px;
+        font-weight: 600;
     }
 
     #logotext a {
@@ -79,7 +81,7 @@ a {
         list-style-type: none;
         margin: 20px;
         white-space: nowrap;
-        font-family: 'Source Sans Pro', sans-serif;
+        /* font-family: 'Source Sans Pro', sans-serif; */
     }
 
     nav ul li a {
@@ -201,7 +203,7 @@ a {
 
         #myLinks{
             display: none;
-            font-family: 'Source Sans Pro', sans-serif;
+            /* font-family: 'Source Sans Pro', sans-serif; */
         }
         
         /* Hide the links inside the navigation menu (except for logo/home) */
@@ -286,23 +288,23 @@ a {
         grid-template-columns: max-content 1fr max-content 1fr max-content;
         height: 210px;
         background-color:#aca5a5;
-        font-family: 'Source Sans Pro', sans-serif;
+        /* font-family: 'Source Sans Pro', sans-serif; */
     }
 
     .kontakt{
         grid-column: 1;
         padding: 50px;
     }
-    .kontakt h3{
+    #kontaktFooter{
         font-weight:600;
     }
 
-    .kontakt h3, .kontakt a{
+    #kontaktFooter, .kontakt a{
         font-size: 1.2em;
         color: #ffffff;
     }
 
-    .kontakt h3, .kontakt div{
+    #kontaktFooter, .kontakt div{
         margin: 10px;
     }
 
@@ -315,7 +317,7 @@ a {
         padding: 50px;
     }
 
-    .socials h3{
+    .socials div{
         font-size: 1.2em;
         text-align: center;
         color: #ffffff;
@@ -342,8 +344,10 @@ a {
         color: #ffffff;
     }
 
-    #backToTop h3{
+    #backToTop div{
         margin: 10px;
+        font-size: 1.2em;
+        font-weight: 600;
     }
 
 @media screen and (max-width: 1125px) {
@@ -391,7 +395,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Source Sans Pro', sans-serif;
+        /* font-family: 'Source Sans Pro', sans-serif; */
         margin: 0;
         font-size: 1.8em;
         height: 85px;
@@ -415,7 +419,7 @@ a {
         padding: 20px 50px;
     }
     
-    .socials h3{
+    .socials div{
         text-align:left;
     }
 
