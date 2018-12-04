@@ -141,6 +141,7 @@
 #infomation-box10{
     grid-column: 3;
     grid-row: 10;
+    margin: 0 0 50px 0;
 }
 
 #occupation-box10{
