@@ -7,7 +7,7 @@
     padding: 0 50px;
 }
 
-.historie-container h2{
+.historie-container p{
     color: #9989a8;
     font-size: 1.2em;
     font-weight: 500;
@@ -30,13 +30,13 @@
 }
 
 @media screen and (max-width: 1100px){
-    .historie-container h2{
+    .historie-container p{
         padding: 0 100px;
     }
 }
 
 @media screen and (max-width: 700px){
-    .historie-container h2{
+    .historie-container p{
         padding: 0 50px;
     }
 }
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 400px){
-    .historie-container h2{
+    .historie-container p{
         padding: 0 10px;
     }
 }

@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.book-os-container h1{
+.book-os-container h1, .book-os-container h2{
     color: #d51720;
     font-size: 2em;
     font-weight: 500;
@@ -11,7 +11,7 @@
     padding: 0 50px;
 }
 
-.book-os-container h2{
+.book-os-container p{
     color: #9989a8;
     font-size: 1.2em;
     font-weight: 500;
@@ -39,31 +39,31 @@
     filter: brightness(110%);
 }
 
-.book-os-container h2 a {
+.book-os-container p a {
     color: #9989a8;
 }
 
 
 @media screen and (max-width: 1100px){
-    .book-os-container h2{
+    .book-os-container p{
         padding: 0 100px;
     }
 }
 
 @media screen and (max-width: 700px){
-    .book-os-container h2{
+    .book-os-container p{
         padding: 0 50px;
     }
 }
 
 @media screen and (max-width: 450px){
-    .book-os-container h1{
+    .book-os-container h1, .book-os-container h2{
         padding: 0 10px;
     }
 }
 
 @media screen and (max-width: 400px){
-    .book-os-container h2{
+    .book-os-container p{
         padding: 0 10px;
     }
 }

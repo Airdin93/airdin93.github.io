@@ -8,13 +8,13 @@
     font-weight: 500;
 }
 
-.bestyrelsen-container h2{
+.bestyrelsen-container p{
     color: #9989a8;
     font-size: 1.2em;
     font-weight: 500;
 }
 
-.bestyrelsen-container h2 a {
+.bestyrelsen-container p a {
     color: #9989a8;
 }
 
@@ -32,11 +32,11 @@
     white-space: nowrap;
 }
 
-#occupation-box1 h2, #occupation-box2 h2, #occupation-box3 h2 , #occupation-box4 h2, #occupation-box5 h2, #occupation-box6 h2, #occupation-box7 h2, #occupation-box8 h2, #occupation-box9 h2, #occupation-box10 h2{
+#occupation-box1 p, #occupation-box2 p, #occupation-box3 p , #occupation-box4 p, #occupation-box5 p, #occupation-box6 p, #occupation-box7 p, #occupation-box8 p, #occupation-box9 p, #occupation-box10 p{
     margin: 20px 20px;
 }
 
-#infomation-box1 h2, #infomation-box2 h2, #infomation-box3 h2, #infomation-box4 h2, #infomation-box5 h2, #infomation-box6 h2, #infomation-box7 h2, #infomation-box8 h2, #infomation-box9 h2, #infomation-box10 h2{
+#infomation-box1 p, #infomation-box2 p, #infomation-box3 p, #infomation-box4 p, #infomation-box5 p, #infomation-box6 p, #infomation-box7 p, #infomation-box8 p, #infomation-box9 p, #infomation-box10 p{
     margin: 20px 20px;
 }
 
@@ -156,7 +156,7 @@
         grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
     }
 
-    #infomation-box1 h2:first-child, #infomation-box2 h2:first-child, #infomation-box3 h2:first-child, #infomation-box4 h2:first-child, #infomation-box5 h2:first-child, #infomation-box6 h2:first-child, #infomation-box7 h2:first-child, #infomation-box8 h2:first-child, #infomation-box9 h2:first-child, #infomation-box10 h2:first-child{
+    #infomation-box1 p:first-child, #infomation-box2 p:first-child, #infomation-box3 p:first-child, #infomation-box4 p:first-child, #infomation-box5 p:first-child, #infomation-box6 p:first-child, #infomation-box7 p:first-child, #infomation-box8 p:first-child, #infomation-box9 p:first-child, #infomation-box10 p:first-child{
         margin: 0px 20px 20px 20px;
     }
 
@@ -164,7 +164,7 @@
         border-top: none;
     }
 
-    #occupation-box1 h2, #occupation-box2 h2, #occupation-box3 h2 , #occupation-box4 h2, #occupation-box5 h2, #occupation-box6 h2, #occupation-box7 h2, #occupation-box8 h2, #occupation-box9 h2, #occupation-box10 h2{
+    #occupation-box1 p, #occupation-box2 p, #occupation-box3 p , #occupation-box4 p, #occupation-box5 p, #occupation-box6 p, #occupation-box7 p, #occupation-box8 p, #occupation-box9 p, #occupation-box10 p{
         font-size: 1.5em;
         color: #d51720;
     }
