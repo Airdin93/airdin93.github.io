@@ -20,6 +20,14 @@
     padding: 0 50px;
 }
 
+.sponsorer a{
+    color: #9989a8;
+}
+
+.sponsorer a:hover{
+    color: #dbdbdb;
+}
+
 #sponsorsLogos{
     display: grid; 
     /* grid-template-columns: 252px 252px 252px 252px; */
