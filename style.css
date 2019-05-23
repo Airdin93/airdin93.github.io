@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+#coolSVG{
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+    margin-left: 500px;
+}
+
+#coolSVG:hover{
+    animation-duration: 1.2s;
+    animation-name: coolSvg;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#bm{
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    justify-self: center;
+    margin-left: 500px;
+}
+
+@keyframes coolSvg{
+    from{
+        transform: translateX(0) translateY(0);
+        /* opacity: 0; */
+    }
+    to {
+        transform: translateX(25px) translateY(-25px);
+    }
+} 
+
+@media screen and (max-width: 720px) {
+
+}
